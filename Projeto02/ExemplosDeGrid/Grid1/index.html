@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Layoutit</title>
+  
+
+<!-- https://grid.layoutit.com/ -->
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 3.5fr 0fr;
+      grid-template-rows: 0.5fr 1fr 0.5fr;
+      gap: 10px 10px;
+      grid-auto-flow: row;
+      height: 100vh;
+    }
+
+    .Header { 
+      grid-area: 1 / 2 / 2 / 3; 
+      background: #a0c4ff;
+    }
+
+    .Conteudo { 
+      grid-area: 2 / 2 / 3 / 3; 
+      background: #bdb2ff;
+    }
+
+    .Logo { 
+      grid-area: 1 / 1 / 2 / 2; 
+      background: #ffc6ff;
+    }
+
+    .destaques { 
+      grid-area: 2 / 1 / 3 / 2; 
+      background: #ffadad;
+    }
+
+    .Footer { 
+      grid-area: 3 / 1 / 4 / 3; 
+      background: #caffbf;
+    }
+  </style>
+<!-- https://grid.layoutit.com/ -->
+
+</head>
+<body>
+
+     
+<!-- https://grid.layoutit.com/ -->
+  <div class="grid">
+    <div class="Header">Header</div>
+    <div class="Conteudo">Conteúdo</div>
+    <div class="Logo">Logo</div>
+    <div class="destaques">Destaques</div>
+    <div class="Footer">Footer</div>
+  </div>
+<!-- https://grid.layoutit.com/ -->
+</body>
+</html>
